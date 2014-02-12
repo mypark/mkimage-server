@@ -1,22 +1,33 @@
 {
-    "name": "mkimage-server",
-    "version": "0.3.3",
-    "description": "Image resizing server, using imagemagick cli tools",
-    "keywords": ["image", "resize", "server"],
-    "author": "Alex Simenduev <shamil@boxee.tv> (http://boxee.tv)",
-    "contributors": [ "Liel Dulev <liel@boxee.tv> (http://boxee.tv)" ],
-    "repository": "git://github.com/Boxee/mkimage-server.git",
-
-    "dependencies": {
-        "sslog": ">= 0.1.0",
-        "express": ">= 3.1.1",
-        "fs-ext": ">= 0.3.1",
-        "mkdirp": ">= 0.3.5",
-        "request": ">= 2.16.6",
-        "minimatch": ">= 0.2.11",
-        "lru-cache": ">= 2.3.0"
-    },
-
-    "bin" : { "mkimage" : "./bin/mkimage" },
-    "engines": { "node": ">= 0.8.0" }
+  "name": "mkimage-server",
+  "version": "0.3.3",
+  "description": "Image resizing server, using imagemagick cli tools",
+  "keywords": [
+    "image",
+    "resize",
+    "server"
+  ],
+  "author": "Alex Simenduev <shamil@boxee.tv> (http://boxee.tv)",
+  "contributors": [
+    "Liel Dulev <liel@boxee.tv> (http://boxee.tv)"
+  ],
+  "repository": "git://github.com/Boxee/mkimage-server.git",
+  "dependencies": {
+    "sslog": ">= 0.1.0",
+    "express": ">= 3.1.1",
+    "fs-ext": ">= 0.3.1",
+    "mkdirp": ">= 0.3.5",
+    "request": ">= 2.16.6",
+    "minimatch": ">= 0.2.11",
+    "lru-cache": ">= 2.3.0",
+    "opencv": "~0.4.0",
+    "underscore": "~1.6.0",
+    "async": "~0.2.10"
+  },
+  "bin": {
+    "mkimage": "./bin/mkimage"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
 }
