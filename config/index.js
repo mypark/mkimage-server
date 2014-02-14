@@ -4,7 +4,7 @@ var fs          = require('fs'),
     config      = require('../lib/config');
 
 // get the NODE_ENV
-var env = process.env.NODE_ENV;
+var env = process.env.NODE_ENV || 'development';
 
 // load default config options
 config.load('./config/default.json', function(err) {
